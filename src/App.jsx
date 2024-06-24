@@ -1,9 +1,18 @@
 import { GlobalStyles } from "./GlobalStyles/GlobalStyles";
+import Header from "./components/header/Header";
+import Main from "./components/main/Main";
+import CounterProvider from "./providers/CounterProvider";
 
 const App = () => {
+	
 	return <>
 	<GlobalStyles></GlobalStyles>
-	<h1>Núcleo de la aplicación</h1>;
+	<CounterProvider>
+
+		<Header />
+		<Main/>
+	</CounterProvider>
+	
 	
 	
 	</> 
